@@ -7,6 +7,8 @@
     <meta name="description" content="Base mínima de sitio estático con TailwindCSS." />
     <script src="app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/requirements.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body class="min-h-screen bg-slate-950 font-sans text-slate-100">
     <main class="flex min-h-screen items-center justify-center px-6 py-16">
@@ -52,30 +54,16 @@
             <table class="min-w-full border-separate border-spacing-0 text-left text-sm">
               <thead>
                 <tr class="text-slate-400">
-                  <th class="border-b border-white/10 px-4 py-3 font-medium">ID</th>
-                  <th class="border-b border-white/10 px-4 py-3 font-medium">Nombre</th>
-                  <th class="border-b border-white/10 px-4 py-3 font-medium">Estado</th>
-                  <th class="border-b border-white/10 px-4 py-3 font-medium">Progreso</th>
+                  <th class="border-b border-white/10 px-4 py-3 font-medium">Fecha</th>
+                  <th class="border-b border-white/10 px-4 py-3 font-medium">Hora</th>
+                  <th class="border-b border-white/10 px-4 py-3 font-medium">Café</th>
+                  <th class="border-b border-white/10 px-4 py-3 font-medium">Tipo de pago</th>
+                  <th class="border-b border-white/10 px-4 py-3 font-medium">Monto</th>
                 </tr>
               </thead>
               <tbody id="datatable-body" class="text-slate-200">
-                <tr class="datatable-row border-b border-white/5">
-                  <td class="px-4 py-4 font-medium text-slate-100">001</td>
-                  <td class="px-4 py-4">Diseño base</td>
-                  <td class="px-4 py-4"><span class="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300">Activo</span></td>
-                  <td class="px-4 py-4 text-slate-400">80%</td>
-                </tr>
-                <tr class="datatable-row border-b border-white/5">
-                  <td class="px-4 py-4 font-medium text-slate-100">002</td>
-                  <td class="px-4 py-4">Componentes</td>
-                  <td class="px-4 py-4"><span class="rounded-full bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-300">En progreso</span></td>
-                  <td class="px-4 py-4 text-slate-400">55%</td>
-                </tr>
-                <tr class="datatable-row">
-                  <td class="px-4 py-4 font-medium text-slate-100">003</td>
-                  <td class="px-4 py-4">Publicación</td>
-                  <td class="px-4 py-4"><span class="rounded-full bg-sky-400/10 px-3 py-1 text-xs font-medium text-sky-300">Pendiente</span></td>
-                  <td class="px-4 py-4 text-slate-400">20%</td>
+                <tr>
+                  <td colspan="5" class="px-4 py-8 text-center text-slate-400">Cargando datos...</td>
                 </tr>
               </tbody>
             </table>
